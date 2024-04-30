@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane prefHeight="530.0" prefWidth="700.0" style="-fx-background-color: #EADBC8; -fx-border-color: #EADBC8;" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.modifiereservationController">
+   <tabs>
+      <Tab text="CREATE">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="509.0" prefWidth="709.0" style="-fx-background-color: #102c57;">
+               <children>
+                  <ImageView fitHeight="513.0" fitWidth="708.0">
+                     <image>
+                        <Image url="@../../../../../../../../Users/MSI/Desktop/projet%20eng/back1.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="47.0" layoutY="80.0" text="Numero_reservatin:" textFill="#eadbc8">
+                     <font>
+                        <Font name="Caladea Bold" size="16.0" />
+                     </font></Label>
+                  <Label layoutX="45.0" layoutY="125.0" text="Numero_chambre:" textFill="#eadbc8">
+                     <font>
+                        <Font name="Caladea Bold" size="16.0" />
+                     </font></Label>
+                  <Label layoutX="47.0" layoutY="170.0" text="CIN:" textFill="#eadbc8">
+                     <font>
+                        <Font name="Caladea Bold" size="16.0" />
+                     </font></Label>
+                  <TextField fx:id="num_cham" layoutX="216.0" layoutY="122.0" promptText="Ex:2" />
+                  <TextField fx:id="cin" layoutX="216.0" layoutY="167.0" promptText="Ex:111" />
+                  <TextField fx:id="num_reserv" layoutX="216.0" layoutY="77.0" promptText="Ex:100" />
+                  <Label layoutX="45.0" layoutY="214.0" text="Check_in:" textFill="#eadbc8">
+                     <font>
+                        <Font name="Caladea Bold" size="16.0" />
+                     </font></Label>
+                  <Label layoutX="43.0" layoutY="264.0" text="check_out:" textFill="#eadbc8">
+                     <font>
+                        <Font name="Caladea Bold" size="16.0" />
+                     </font></Label>
+                  <DatePicker fx:id="check_out" layoutX="216.0" layoutY="261.0" prefHeight="26.0" prefWidth="152.0" />
+                  <DatePicker fx:id="check_in" layoutX="216.0" layoutY="211.0" prefHeight="26.0" prefWidth="151.0" />
+                  <Button layoutX="43.0" layoutY="313.0" mnemonicParsing="false" onAction="#create_reserv" prefHeight="26.0" prefWidth="340.0" style="-fx-background-color: #eadbc8; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: white; -fx-border-width: 2;" text="Create" textFill="#102c57">
+                     <font>
+                        <Font name="Liberation Serif Italic" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <TableView fx:id="tableView" layoutX="394.0" layoutY="46.0" prefHeight="426.0" prefWidth="294.0" />
+                  <Label fx:id="result" layoutX="43.0" layoutY="397.0" prefHeight="18.0" prefWidth="25.0" />
+                  <Button layoutX="15.0" layoutY="14.0" mnemonicParsing="false" onAction="#return_page" prefHeight="38.0" prefWidth="110.0" style="-fx-background-color: #EADBC8; -fx-background-radius: 30; -fx-border-color: white; -fx-border-radius: 30; -fx-border-width: 2;" text="&lt;----" textFill="#102c57">
+                     <font>
+                        <Font name="Liberation Serif Italic" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="UPDATE">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #102c57;">
+               <children>
+                  <ImageView fitHeight="513.0" fitWidth="708.0">
+                     <image>
+                        <Image url="@../../../../../../../../Users/MSI/Desktop/projet%20eng/back1.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="28.0" layoutY="57.0" text="Numero_reservatin:" textFill="#eadbc8">
+                     <font>
+                        <Font name="Caladea Bold" size="16.0" />
+                     </font></Label>
+                  <Label layoutX="27.0" layoutY="91.0" text="Numero_chambre:" textFill="#eadbc8">
+                     <font>
+                        <Font name="Caladea Bold" size="16.0" />
+                     </font></Label>
+                  <Label layoutX="27.0" layoutY="133.0" text="CIN:" textFill="#eadbc8">
+                     <font>
+                        <Font name="Caladea Bold" size="16.0" />
+                     </font></Label>
+                  <TextField fx:id="num_cham2" layoutX="183.0" layoutY="88.0" prefHeight="26.0" prefWidth="157.0" promptText="ex:3" style="-fx-background-radius: 100;" />
+                  <TextField fx:id="cin2" layoutX="183.0" layoutY="124.0" prefHeight="26.0" prefWidth="117.0" promptText="ex:100" style="-fx-background-radius: 100;" />
+                  <TextField fx:id="num_reserv2" layoutX="183.0" layoutY="53.0" prefHeight="26.0" prefWidth="182.0" promptText="ex:103" style="-fx-background-radius: 100;" />
+                  <Label layoutX="24.0" layoutY="180.0" text="Check_in:" textFill="#eadbc8">
+                     <font>
+                        <Font name="Caladea Bold" size="16.0" />
+                     </font></Label>
+                  <Label layoutX="21.0" layoutY="220.0" text="check_out:" textFill="#eadbc8">
+                     <font>
+                        <Font name="Caladea Bold" size="16.0" />
+                     </font></Label>
+                  <DatePicker fx:id="check_out2" layoutX="183.0" layoutY="215.0" prefHeight="25.0" prefWidth="166.0" />
+                  <DatePicker fx:id="check_in2" layoutX="182.0" layoutY="177.0" prefHeight="25.0" prefWidth="166.0" />
+                  <TableView fx:id="tableView1" layoutX="370.0" layoutY="328.0" prefHeight="150.0" prefWidth="316.0" />
+                  <Label layoutX="27.0" layoutY="421.0" text="Type chambre:" textFill="#cfb28e">
+                     <font>
+                        <Font name="Caladea Bold" size="16.0" />
+                     </font></Label>
+                  <MenuButton fx:id="menu" layoutX="149.0" layoutY="418.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="173.0" style="-fx-background-color: #EADBC8; -fx-background-radius: 30; -fx-border-color: white; -fx-border-radius: 30; -fx-border-width: 2;" text="              Select" textFill="#102c57">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#Select" text="Select" />
+                        <MenuItem mnemonicParsing="false" onAction="#Single" text="Single" />
+                        <MenuItem mnemonicParsing="false" onAction="#Double" text="Double" />
+                        <MenuItem mnemonicParsing="false" onAction="#Suite" text="Suite" />
+                     </items>
+                     <font>
+                        <Font name="Liberation Serif Italic" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </MenuButton>
+                  <Button layoutX="14.0" layoutY="259.0" mnemonicParsing="false" onAction="#update_reserv" prefHeight="30.0" prefWidth="349.0" style="-fx-background-color: #EADBC8; -fx-background-radius: 30; -fx-border-color: white; -fx-border-radius: 30; -fx-border-width: 2;" text="Update" textFill="#102c57">
+                     <font>
+                        <Font name="Liberation Serif Italic" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <TableView fx:id="tableView2" layoutX="370.0" layoutY="44.0" onMouseClicked="#modifier_tab" prefHeight="263.0" prefWidth="318.0" />
+                  <Label fx:id="result2" layoutX="26.0" layoutY="307.0" prefHeight="18.0" prefWidth="31.0" />
+                  <Label layoutX="31.0" layoutY="341.0" text="Check_in:" textFill="#cfb28e">
+                     <font>
+                        <Font name="Caladea Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="381.0" text="check_out:" textFill="#cfb28e">
+                     <font>
+                        <Font name="Caladea Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="check_out2" layoutX="153.0" layoutY="376.0" prefHeight="25.0" prefWidth="166.0" />
+                  <DatePicker fx:id="check_in2" layoutX="151.0" layoutY="338.0" prefHeight="25.0" prefWidth="166.0" />
+                  <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#return_page" prefHeight="38.0" prefWidth="110.0" style="-fx-background-color: #EADBC8; -fx-background-radius: 30; -fx-border-color: white; -fx-border-radius: 30; -fx-border-width: 2;" text="&lt;----" textFill="#102c57">
+                     <font>
+                        <Font name="Liberation Serif Italic" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="DELETE">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #102c57;">
+               <children>
+                  <ImageView fitHeight="513.0" fitWidth="708.0">
+                     <image>
+                        <Image url="@../../../../../../../../Users/MSI/Desktop/projet%20eng/back1.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="num_reserv3" layoutX="279.0" layoutY="80.0" prefHeight="37.0" prefWidth="266.0" promptText="EX:100" style="-fx-background-radius: 30;" />
+                  <Label layoutX="113.0" layoutY="89.0" text="Numero reservatin:" textFill="#eadbc8">
+                     <font>
+                        <Font name="Caladea Bold" size="16.0" />
+                     </font></Label>
+                  <Button layoutX="448.0" layoutY="83.0" mnemonicParsing="false" onAction="#delete_reserv" prefHeight="10.0" prefWidth="90.0" style="-fx-background-color: #EADBC8; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: white;" text="Delete" textFill="#102c57">
+                     <font>
+                        <Font name="Liberation Serif Italic" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <TableView fx:id="tableView3" layoutX="37.0" layoutY="190.0" onMouseClicked="#modifier_tab2" prefHeight="263.0" prefWidth="626.0" />
+                  <Label fx:id="result3" layoutX="113.0" layoutY="146.0" prefHeight="18.0" prefWidth="22.0" />
+                  <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#return_page" prefHeight="38.0" prefWidth="110.0" style="-fx-background-color: #EADBC8; -fx-background-radius: 30; -fx-border-color: white; -fx-border-radius: 30; -fx-border-width: 2;" text="&lt;----" textFill="#102c57">
+                     <font>
+                        <Font name="Liberation Serif Italic" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+   </tabs>
+</TabPane>

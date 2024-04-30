@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="701.0" stylesheets="@design.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.modifierclientController">
+  <tabs>
+    <Tab text="CREATE">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="428.0" prefWidth="680.0">
+               <children>
+                  <ImageView fitHeight="513.0" fitWidth="708.0" layoutX="-2.0">
+                     <image>
+                        <Image url="@../../../../../../../../Users/MSI/Desktop/projet%20eng/back1.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="create" layoutX="414.0" layoutY="338.0" mnemonicParsing="false" onAction="#create_client" prefHeight="32.0" prefWidth="270.0" style="-fx-background-color: #EADBC8; -fx-background-radius: 20;" text="Create" textFill="#102c57">
+                     <font>
+                        <Font name="Liberation Serif Bold Italic" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="ret" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#return_page" prefHeight="25.0" prefWidth="99.0" style="-fx-background-color: #EADBC8;" text="&lt;----" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="cin" layoutX="475.0" layoutY="154.0" prefHeight="25.0" prefWidth="203.0" style="-fx-background-radius: 100;" />
+                  <TextField fx:id="nom" layoutX="475.0" layoutY="201.0" prefHeight="25.0" prefWidth="203.0" style="-fx-background-radius: 100;" />
+                  <TextField fx:id="ville" layoutX="475.0" layoutY="247.0" prefHeight="25.0" prefWidth="203.0" style="-fx-background-radius: 100;" />
+                  <TextField fx:id="tel" layoutX="475.0" layoutY="292.0" prefHeight="25.0" prefWidth="203.0" style="-fx-background-radius: 100;" />
+                  <TableView fx:id="tableView" layoutX="23.0" layoutY="91.0" prefHeight="387.0" prefWidth="366.0" style="-fx-background-image: #EADBC8;" />
+                  <Label layoutX="418.0" layoutY="157.0" text="CIN:" textFill="#eadbc8">
+                     <font>
+                        <Font name="Caladea Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="413.0" layoutY="202.0" text="Nom:" textFill="#eadbc8">
+                     <font>
+                        <Font name="Linux Biolinum G Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="414.0" layoutY="249.0" text="Ville:" textFill="#eadbc8">
+                     <font>
+                        <Font name="Linux Biolinum G Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="419.0" layoutY="295.0" text="Tel:" textFill="#eadbc8">
+                     <font>
+                        <Font name="Linux Biolinum G Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="UPDATE">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="513.0" fitWidth="708.0">
+                     <image>
+                        <Image url="@../../../../../../../../Users/MSI/Desktop/projet%20eng/back1.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="ret1" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#return_page" prefHeight="25.0" prefWidth="99.0" style="-fx-background-color: #EADBC8;" text="&lt;----" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <TableView fx:id="tableView1" layoutX="332.0" layoutY="69.0" onMouseClicked="#modifier_tab1" prefHeight="408.0" prefWidth="358.0" style="-fx-background-image: #EADBC8;" />
+                  <TextField fx:id="cin1" layoutX="83.0" layoutY="144.0" prefHeight="25.0" prefWidth="203.0" style="-fx-background-radius: 100;" />
+                  <Label layoutX="32.0" layoutY="147.0" text="CIN:" textFill="#eadbc8">
+                     <font>
+                        <Font name="Caladea Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ville1" layoutX="83.0" layoutY="194.0" prefHeight="25.0" prefWidth="203.0" style="-fx-background-radius: 100;" />
+                  <Label layoutX="32.0" layoutY="197.0" text="Ville:" textFill="#eadbc8">
+                     <font>
+                        <Font name="Linux Biolinum G Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tel1" layoutX="83.0" layoutY="243.0" prefHeight="25.0" prefWidth="203.0" style="-fx-background-radius: 100;" />
+                  <Label layoutX="37.0" layoutY="246.0" text="Tel:" textFill="#eadbc8">
+                     <font>
+                        <Font name="Linux Biolinum G Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="update" layoutX="39.0" layoutY="311.0" mnemonicParsing="false" onAction="#update_client" prefHeight="32.0" prefWidth="270.0" style="-fx-background-color: #EADBC8; -fx-background-radius: 20;" text="Update" textFill="#102c57">
+                     <font>
+                        <Font name="Liberation Serif Bold Italic" size="16.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="DELETE">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="513.0" fitWidth="708.0">
+                     <image>
+                        <Image url="@../../../../../../../../Users/MSI/Desktop/projet%20eng/back1.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="ret11" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#return_page" prefHeight="25.0" prefWidth="99.0" style="-fx-background-color: #EADBC8;" text="&lt;----" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <TableView fx:id="tableView2" layoutX="29.0" layoutY="166.0" onMouseClicked="#modifier_tab2" prefHeight="298.0" prefWidth="646.0" style="-fx-background-image: #EADBC8;" />
+                  <TextField fx:id="cin2" layoutX="240.0" layoutY="77.0" prefHeight="39.0" prefWidth="266.0" style="-fx-background-radius: 100;" />
+                  <Label layoutX="189.0" layoutY="87.0" text="CIN:" textFill="#eadbc8">
+                     <font>
+                        <Font name="Caladea Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="delete" layoutX="425.0" layoutY="81.0" mnemonicParsing="false" onAction="#delete_client" prefHeight="24.0" prefWidth="75.0" style="-fx-background-color: #EADBC8; -fx-background-radius: 20;" text="Delete" textFill="#102c57">
+                     <font>
+                        <Font name="Liberation Serif Bold Italic" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>

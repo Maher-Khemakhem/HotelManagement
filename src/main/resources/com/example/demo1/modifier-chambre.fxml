@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="700.0" stylesheets="@design.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.modifierchambreController">
+  <tabs>
+    <Tab text="CREATE">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="503.0" fitWidth="707.0" layoutX="-2.0">
+                     <image>
+                        <Image url="@../../../../../../../../Users/MSI/Desktop/projet%20eng/back1.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#return_page" prefHeight="32.0" prefWidth="101.0" text="&lt;---" />
+                  <TextField fx:id="num_cham" layoutX="533.0" layoutY="136.0" prefHeight="26.0" prefWidth="159.0" style="-fx-background-radius: 100;" />
+                  <TextField fx:id="type" layoutX="533.0" layoutY="188.0" prefHeight="26.0" prefWidth="158.0" style="-fx-background-radius: 100;" />
+                  <TextField fx:id="capacite" layoutX="534.0" layoutY="238.0" prefHeight="26.0" prefWidth="157.0" style="-fx-background-radius: 100;" />
+                  <Label layoutX="348.0" layoutY="123.0" prefHeight="52.0" prefWidth="175.0" text="Numéro chambre:" textFill="#dac0a3">
+                     <font>
+                        <Font name="Scheherazade Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="348.0" layoutY="168.0" text="Type:" textFill="#dac0a3">
+                     <font>
+                        <Font name="Scheherazade Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="349.0" layoutY="221.0" text="Capacité:" textFill="#dac0a3">
+                     <font>
+                        <Font name="Scheherazade Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tableView" layoutX="23.0" layoutY="69.0" prefHeight="398.0" prefWidth="306.0" />
+                  <Button fx:id="create" layoutX="348.0" layoutY="330.0" mnemonicParsing="false" onAction="#create_cham" prefHeight="38.0" prefWidth="344.0" text="Create" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="UPDATE">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" stylesheets="@design.css">
+               <children>
+                  <ImageView fitHeight="501.0" fitWidth="700.0" layoutY="1.0">
+                     <image>
+                        <Image url="@../../../../../../../../Users/MSI/Desktop/projet%20eng/back1.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#return_page" prefHeight="25.0" prefWidth="101.0" text="&lt;---" />
+                  <TextField fx:id="type1" layoutX="320.0" layoutY="119.0" prefHeight="26.0" prefWidth="240.0" style="-fx-background-radius: 100;" />
+                  <Label layoutX="140.0" layoutY="106.0" text="Type:" textFill="#dac0a3">
+                     <font>
+                        <Font name="Scheherazade Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="num_cham1" layoutX="320.0" layoutY="80.0" prefHeight="26.0" prefWidth="239.0" style="-fx-background-radius: 100;" />
+                  <Label layoutX="140.0" layoutY="67.0" text="Numéro chambre:" textFill="#dac0a3">
+                     <font>
+                        <Font name="Scheherazade Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tableView1" layoutX="37.0" layoutY="227.0" onMouseClicked="#modifier_tab1" prefHeight="250.0" prefWidth="644.0" />
+                  <Button fx:id="update" layoutX="184.0" layoutY="170.0" mnemonicParsing="false" onAction="#update_cham" prefHeight="38.0" prefWidth="331.0" text="Update" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="CHECK">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="502.0" fitWidth="700.0">
+                     <image>
+                        <Image url="@../../../../../../../../Users/MSI/Desktop/projet%20eng/back1.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#return_page" prefHeight="25.0" prefWidth="101.0" text="&lt;---" />
+                  <TableView fx:id="tableView2" layoutX="47.0" layoutY="230.0" prefHeight="250.0" prefWidth="606.0" />
+                  <DatePicker fx:id="check_in" layoutX="271.0" layoutY="82.0" promptText="check_in" />
+                  <DatePicker fx:id="check_out" layoutX="271.0" layoutY="127.0" promptText="check_out" />
+                  <MenuButton fx:id="menu" layoutX="263.0" layoutY="171.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="188.0" style="-fx-background-color: #EADBC8; -fx-background-radius: 30; -fx-border-color: white; -fx-border-radius: 30; -fx-border-width: 2;" text="            Reserver" textFill="#102c57">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#reserver" text="Reserver" />
+                        <MenuItem mnemonicParsing="false" onAction="#non_reserver" text="Non-Reserver" />
+                     </items>
+                     <font>
+                        <Font name="Liberation Serif Italic" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </MenuButton>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>

@@ -1,0 +1,30 @@
+.TextField{
+    -fx-background-radius:100;
+
+}
+.root{
+    -fx-background-color:#102c57 ;
+}
+.Label{
+    -fx-font-family: Caladea;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-background-color: #EADBC8;
+}
+.button{
+    -fx-background-color: #EADBC8;
+    -fx-background-radius: 30;
+    -fx-border-radius:30;
+    -fx-border-color: white;
+    -fx-font-family: "Liberation Serif";
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-text-fill: #102c57;
+
+    -fx-cursor: hand;
+    -fx-display: flex;
+    -fx-justify-content: center;
+    -fx-line-height: 1em;
+    -fx-width: 100%;
+
+}

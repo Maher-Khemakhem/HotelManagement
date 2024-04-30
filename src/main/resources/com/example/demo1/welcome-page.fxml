@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="530.0" prefWidth="700.0" style="-fx-background-color: #102c57;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.welcomepageController">
+   <children>
+      <ImageView fitHeight="530.0" fitWidth="711.0" style="-fx-opacity: 50%;">
+         <image>
+            <Image url="@../../../../../../../../Users/MSI/Downloads/518332246.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="151.0" layoutY="14.0" text="Easy Hotel" textAlignment="CENTER" textFill="#f2d9c1">
+         <font>
+            <Font name="Gentium Basic Bold Italic" size="96.0" />
+         </font>
+      </Label>
+      <Button fx:id="chambreid" layoutX="146.0" layoutY="205.0" mnemonicParsing="false" onAction="#modifier_chambre" prefHeight="36.0" prefWidth="418.0" style="-fx-background-color: #EADBC8; -fx-background-radius: 25;" text="Modifier chambre" textAlignment="CENTER" textFill="#102c57">
+         <font>
+            <Font name="High Tower Text" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+      <Label layoutX="300.0" layoutY="137.0" text="Options:" textFill="#faf4ed">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="clientid" layoutX="146.0" layoutY="258.0" mnemonicParsing="false" onAction="#modifier_client" prefHeight="36.0" prefWidth="418.0" style="-fx-background-color: #EADBC8; -fx-background-radius: 25;" text="Modifier client" textFill="#102c57">
+         <font>
+            <Font name="High Tower Text" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="reservationid" layoutX="146.0" layoutY="309.0" mnemonicParsing="false" onAction="#modifier_reservation" prefHeight="36.0" prefWidth="418.0" style="-fx-background-color: #EADBC8; -fx-background-radius: 25;" text="Modifier réservation" textFill="#102c57">
+         <font>
+            <Font name="High Tower Text" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="chambreid1" layoutX="146.0" layoutY="361.0" mnemonicParsing="false" onAction="#analyse_page" prefHeight="36.0" prefWidth="418.0" style="-fx-background-color: #EADBC8; -fx-background-radius: 25;" text="Analyse" textAlignment="CENTER" textFill="#102c57">
+         <font>
+            <Font name="High Tower Text" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+      <Button layoutX="25.0" layoutY="447.0" mnemonicParsing="false" onAction="#logout" prefHeight="58.0" prefWidth="86.0" style="-fx-background-color: #8B322C; -fx-background-radius: 100%;" text="Logout" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Eras Bold ITC" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

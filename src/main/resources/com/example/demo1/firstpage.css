@@ -1,0 +1,67 @@
+/* des.css */
+
+/* Styles for the root Pane */
+/* styles.css */
+.root {
+
+
+    /*-fx-background-color: #102c57;*/
+
+    -fx-background-color: white;
+
+}
+
+
+
+/* styles.css */
+.button {
+    -fx-alignment: center;
+    -fx-background-color: linear-gradient( #eadbc8,#eadbc8,#ffffff);
+    -fx-background-radius: 40%;
+    -fx-border-width: 5;
+    -fx-border-radius: 25%;
+    -fx-effect: dropshadow(three-pass-box ,rgba(151, 65, 252, 0.2),10,0.5,3,3);
+    -fx-font-family: "Liberation Serif";
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-text-fill: #102c57;
+    -fx-padding: 3px;
+    -fx-text-decoration: none;
+    -fx-cursor: hand;
+    -fx-display: flex;
+    -fx-justify-content: center;
+    -fx-line-height: 1em;
+    -fx-width: 100%;
+
+    -fx-user-select: none;
+    -fx-touch-action: manipulation;
+    -fx-white-space: nowrap;
+}
+
+
+.button:pressed,
+.button:hover {
+    -fx-background-insets: 0;
+    -fx-outline: none;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.button .text {
+    -fx-background-color: rgb(5, 6, 45);
+    -fx-padding: 16px 24px;
+    -fx-border-radius: 6px;
+    -fx-transition-duration: 300ms;
+
+}
+
+.button:hover .text {
+    -fx-background-color: transparent;
+}
+
+@media (min-width: 768px) {
+    .button {
+        -fx-font-size: 24px;
+        -fx-min-width: 196px;
+    }
+}
